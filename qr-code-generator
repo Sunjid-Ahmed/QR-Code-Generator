@@ -1,0 +1,10 @@
+import qrcode
+from PIL import Image
+
+# Generate the QR code
+myqr = qrcode.make("https://www.youtube.com/watch?v=IUQVO97zcE0")
+myqr.save("myqr.png")  # Save the QR code as an image file
+
+# Open and display the QR code image
+myqr.show()  # Opens the saved QR code using the default image viewer
+
